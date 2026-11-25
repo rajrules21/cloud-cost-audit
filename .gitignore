@@ -1,0 +1,16 @@
+# Audit outputs & billing data
+cost_audit_output/
+cost_audit_output_*/
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Secrets / environment
+.env
+.env.*
