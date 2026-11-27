@@ -11,8 +11,8 @@ All findings are exported as **CSV files** (no JSON) alongside an executive **`C
 | Cloud Provider | Status | Scope Covered |
 | :--- | :--- | :--- |
 | **Microsoft Azure** | **Implemented** ([`azure/`](./azure)) | Cost Management (`AmortizedCost` by Resource Group & Service), Orphaned Disks / Public IPs / Snapshots / Empty App Service Plans / Unused Load Balancers, Stopped-not-Deallocated VMs, 14-day VM CPU P95/Avg Utilization, Azure Advisor Cost Recommendations, Azure Hybrid Benefit gaps, Storage redundancy & lifecycle policies, Log Analytics retention/caps, Subscription Budgets, and Untagged Resources |
-| **Amazon Web Services (AWS)** | **Planned** ([`aws/`](./aws)) | Cost Explorer (`Unblended`/`Amortized`), unattached EBS volumes, Elastic IPs, old snapshots, CloudWatch P95 EC2/RDS utilization, Savings Plans/RI coverage, AWS Budgets |
-| **Google Cloud Platform (GCP)** | **Planned** ([`gcp/`](./gcp)) | BigQuery Billing Export, unattached Persistent Disks, unused static IPs, Cloud Monitoring VM utilization, Committed Use Discounts (CUDs), Cloud Budgets |
+| **Amazon Web Services (AWS)** | **Implemented** ([`aws/`](./aws)) | Cost Explorer (`AmortizedCost` by Service & Region), unattached EBS volumes, unassociated Elastic IPs, stale snapshots, stopped EC2 instances, 14-day CloudWatch CPU (Avg & P95), Savings Plans/RI utilization, S3 lifecycle, CloudWatch Log Group retention, AWS Budgets & untagged resources |
+| **Google Cloud Platform (GCP)** | **Implemented** ([`gcp/`](./gcp)) | Cloud Billing account & project linkage, unattached Persistent Disks, unused Static External IPs, stale snapshots, stopped VMs, 14-day Cloud Monitoring CPU (Avg & P95), Committed Use Discounts (CUDs), GCS lifecycle, Billing Budgets & unlabeled resources |
 
 ---
 

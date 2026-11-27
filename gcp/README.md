@@ -1,3 +1,9 @@
-# GCP Cost & FinOps Audit Module (Planned)
+# GCP Cost & Billing Audit
 
-Planned read-only collectors using `google-cloud-*` SDKs (Cloud Billing, Compute Engine, Cloud Monitoring, Recommender API, Billing Budgets) outputting normalized CSVs and `COST_AUDIT_REPORT.md`.
+Strictly read-only GCP Cost & FinOps audit using Application Default Credentials (`gcloud auth application-default login`), exporting CSVs and `COST_AUDIT_REPORT.md` (no JSON).
+
+```powershell
+pip install -r requirements.txt
+gcloud auth application-default login
+python audit_gcp_cost.py
+```
